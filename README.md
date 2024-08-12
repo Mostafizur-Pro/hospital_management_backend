@@ -18,7 +18,7 @@ This is the backend of a Hospital Management System built using Laravel. The sys
 -   PHP >= 8.2.4
 -   Composer
 -   MySQL
--   Node.js and npm (optional, if using frontend with Vue.js or React)
+<!-- -   Node.js and npm (optional, if using frontend with Vue.js or React) -->
 
 ## Installation
 
