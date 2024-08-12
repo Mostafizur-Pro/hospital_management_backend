@@ -15,10 +15,8 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('patient_id');
             $table->foreign('patient_id')->references('id')->on('patients');
-
-            // $table->unsignedBigInteger('doctor_id');
-            // $table->foreign('doctor_id')->references('id')->on('doctors');
-
+            $table->unsignedBigInteger('doctor_id');
+            $table->foreign('doctor_id')->references('id')->on('doctors');
             $table->dateTime('scheduled_at');
             $table->text('notes')->nullable();
             $table->timestamps();
