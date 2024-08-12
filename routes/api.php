@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdmissionController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\ConsultationController;
+use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\InsuranceController;
 use App\Http\Controllers\MedicalTestController;
 use App\Http\Controllers\ObservationController;
@@ -15,7 +16,6 @@ Route::post('patients/register', [PatientController::class, 'register']);
 Route::get('patients/{id}', [PatientController::class, 'show']);
 Route::put('patients/{id}', [PatientController::class, 'update']);
 Route::delete('patients/{id}', [PatientController::class, 'delete']);
-
 
 
 Route::post('appointments/schedule', [AppointmentController::class, 'schedule']);
@@ -50,3 +50,9 @@ Route::put('admissions/{id}', [AdmissionController::class, 'update']);
 Route::post('observations/record', [ObservationController::class, 'record']);
 Route::get('observations/{id}', [ObservationController::class, 'show']);
 Route::put('observations/{id}', [ObservationController::class, 'update']);
+
+
+Route::post('doctors', [DoctorController::class, 'store']);
+Route::get('doctors/{id}', [DoctorController::class, 'show']);
+Route::put('doctors/{id}', [DoctorController::class, 'update']);
+Route::delete('doctors/{id}', [DoctorController::class, 'destroy']);
