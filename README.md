@@ -4,30 +4,30 @@ This is the backend of a Hospital Management System built using Laravel. The sys
 
 ## Features
 
-- **Patient Registration**: Register new patients with their details.
-- **Doctor Management**: Manage doctors and their specializations.
-- **Appointment Scheduling**: Schedule appointments between patients and doctors.
-- **Insurance Planning**: Manage insurance details for patients.
-- **Consultations**: Record consultation notes between doctors and patients.
-- **Medical Tests**: Record and track medical tests for patients.
-- **Report Management**: Transfer reports between laboratories and doctors.
-- **Patient Admission**: Admit patients into rooms and manage their stay.
+-   **Patient Registration**: Register new patients with their details.
+-   **Doctor Management**: Manage doctors and their specializations.
+-   **Appointment Scheduling**: Schedule appointments between patients and doctors.
+-   **Insurance Planning**: Manage insurance details for patients.
+-   **Consultations**: Record consultation notes between doctors and patients.
+-   **Medical Tests**: Record and track medical tests for patients.
+-   **Report Management**: Transfer reports between laboratories and doctors.
+-   **Patient Admission**: Admit patients into rooms and manage their stay.
 
 ## Prerequisites
 
-- PHP >= 8.1
-- Composer
-- MySQL
-- Node.js and npm (optional, if using frontend with Vue.js or React)
+-   PHP >= 8.2.4
+-   Composer
+-   MySQL
+-   Node.js and npm (optional, if using frontend with Vue.js or React)
 
 ## Installation
 
 1. **Clone the repository:**
 
-   ```bash
-   git clone https://github.com/Mostafizur-Pro/hospital_management_backend.git
-   cd hospital_management_backend
-  ```
+    ```bash
+    git clone https://github.com/Mostafizur-Pro/hospital_management_backend.git
+    cd hospital_management_backend
+    ```
 
 2. **Install Dependencies**
 
@@ -56,7 +56,7 @@ This is the backend of a Hospital Management System built using Laravel. The sys
 
 ## Configuration
 
-- Open the `.env` file and set the following variables according to your database configuration:
+-   Open the `.env` file and set the following variables according to your database configuration:
 
     ```ini
     DB_CONNECTION=mysql
@@ -81,63 +81,62 @@ This is the backend of a Hospital Management System built using Laravel. The sys
 
 ## Database Structure
 
-- doctors: Stores doctor information (name, specialization, phone, email, etc.).
-- patients: Stores patient information (name, email, phone, dob, address, etc.).
-- appointments: Stores appointment details between patients and doctors.
-- insurances: Stores insurance details for patients.
-- consultations: Stores consultation notes between doctors and patients.
-- medical_tests: Stores details of medical tests conducted on patients.
-- reports: Stores reports generated from medical tests.
+-   doctors: Stores doctor information (name, specialization, phone, email, etc.).
+-   patients: Stores patient information (name, email, phone, dob, address, etc.).
+-   appointments: Stores appointment details between patients and doctors.
+-   insurances: Stores insurance details for patients.
+-   consultations: Stores consultation notes between doctors and patients.
+-   medical_tests: Stores details of medical tests conducted on patients.
+-   reports: Stores reports generated from medical tests.
+
 ## Seeders
 
-- DoctorSeeder: Seeds the doctors table.
-- PatientSeeder: Seeds the patients table.
-- AppointmentSeeder: Seeds the appointments table.
-- InsuranceSeeder: Seeds the insurances table.
-- ConsultationSeeder: Seeds the consultations table.
-- MedicalTestSeeder: Seeds the medical_tests table.
+-   DoctorSeeder: Seeds the doctors table.
+-   PatientSeeder: Seeds the patients table.
+-   AppointmentSeeder: Seeds the appointments table.
+-   InsuranceSeeder: Seeds the insurances table.
+-   ConsultationSeeder: Seeds the consultations table.
+-   MedicalTestSeeder: Seeds the medical_tests table.
 
 ## API Endpoints
 
-- **Doctor Routes:**
-- GET /api/doctors: List all doctors.
-- POST /api/doctors: Add a new doctor.
-- GET /api/doctors/{id}: Get details of a specific doctor.
-- PUT /api/doctors/{id}: Update a doctor's information.
-- DELETE /api/doctors/{id}: Delete a doctor.e
+-   **Doctor Routes:**
+-   GET /api/doctors: List all doctors.
+-   POST /api/doctors: Add a new doctor.
+-   GET /api/doctors/{id}: Get details of a specific doctor.
+-   PUT /api/doctors/{id}: Update a doctor's information.
+-   DELETE /api/doctors/{id}: Delete a doctor.e
 
-- **Patient Routes:**
-  - GET /api/patients: List all patients.
-- POST /api/patients: Add a new patient.
-- GET /api/patients/{id}: Get details of a specific patient.
-- PUT /api/patients/{id}: Update a patient's information.
-- DELETE /api/patients/{id}: Delete a patient.
-- **Appointment  Routes:**
-- GET /api/appointments: List all appointments.
-- POST /api/appointments: Schedule a new appointment.
-- GET /api/appointments/{id}: Get details of a specific appointment.
-- PUT /api/appointments/{id}: Update an appointment.
-- DELETE /api/appointments/{id}: Cancel an appointment.
-- **Insurance  Routes:**
-- GET /api/insurances: List all insurances.
-- POST /api/insurances: Add new insurance.
-- GET /api/insurances/{id}: Get details of a specific insurance.
-- PUT /api/insurances/{id}: Update an insurance policy.
-- DELETE /api/insurances/{id}: Delete an insurance policy.
-- **Consultation  Routes:**
-- GET /api/consultations: List all consultations.
-- POST /api/consultations: Add a new consultation.
-- GET /api/consultations/{id}: Get details of a specific consultation.
-- PUT /api/consultations/{id}: Update a consultation.
-- DELETE /api/consultations/{id}: Delete a consultation.
-- **Medical   Routes:**
-- GET /api/medical-tests: List all medical tests.
-- POST /api/medical-tests: Add a new medical test.
-- GET /api/medical-tests/{id}: Get details of a specific medical test.
-- PUT /api/medical-tests/{id}: Update a medical test.
-- DELETE /api/medical-tests/{id}: Delete a medical test.
-
-
+-   **Patient Routes:**
+    -   GET /api/patients: List all patients.
+-   POST /api/patients: Add a new patient.
+-   GET /api/patients/{id}: Get details of a specific patient.
+-   PUT /api/patients/{id}: Update a patient's information.
+-   DELETE /api/patients/{id}: Delete a patient.
+-   **Appointment Routes:**
+-   GET /api/appointments: List all appointments.
+-   POST /api/appointments: Schedule a new appointment.
+-   GET /api/appointments/{id}: Get details of a specific appointment.
+-   PUT /api/appointments/{id}: Update an appointment.
+-   DELETE /api/appointments/{id}: Cancel an appointment.
+-   **Insurance Routes:**
+-   GET /api/insurances: List all insurances.
+-   POST /api/insurances: Add new insurance.
+-   GET /api/insurances/{id}: Get details of a specific insurance.
+-   PUT /api/insurances/{id}: Update an insurance policy.
+-   DELETE /api/insurances/{id}: Delete an insurance policy.
+-   **Consultation Routes:**
+-   GET /api/consultations: List all consultations.
+-   POST /api/consultations: Add a new consultation.
+-   GET /api/consultations/{id}: Get details of a specific consultation.
+-   PUT /api/consultations/{id}: Update a consultation.
+-   DELETE /api/consultations/{id}: Delete a consultation.
+-   **Medical Routes:**
+-   GET /api/medical-tests: List all medical tests.
+-   POST /api/medical-tests: Add a new medical test.
+-   GET /api/medical-tests/{id}: Get details of a specific medical test.
+-   PUT /api/medical-tests/{id}: Update a medical test.
+-   DELETE /api/medical-tests/{id}: Delete a medical test.
 
 ## Running the Application
 
@@ -149,3 +148,8 @@ Run the application's tests using PHPUnit:
 
 ```bash
 php artisan test
+```
+
+```
+
+```
