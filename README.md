@@ -100,45 +100,53 @@ This is the backend of a Hospital Management System built using Laravel. The sys
 
 ## API Endpoints
 
-**Doctor Routes:**
+1. **Doctor Routes:**
 
--   GET /api/doctors: List all doctors.
--   POST /api/doctors: Add a new doctor.
--   GET /api/doctors/{id}: Get details of a specific doctor.
--   PUT /api/doctors/{id}: Update a doctor's information.
--   DELETE /api/doctors/{id}: Delete a doctor.e
+    - GET /api/doctors: List all doctors.
+    - POST /api/doctors: Add a new doctor.
+    - GET /api/doctors/{id}: Get details of a specific doctor.
+    - PUT /api/doctors/{id}: Update a doctor's information.
+    - DELETE /api/doctors/{id}: Delete a doctor.e
 
-    **Patient Routes:**
+2. **Patient Routes:**
 
--   GET /api/patients: List all patients.
--   POST /api/patients: Add a new patient.
--   GET /api/patients/{id}: Get details of a specific patient.
--   PUT /api/patients/{id}: Update a patient's information.
--   DELETE /api/patients/{id}: Delete a patient.
-    **Appointment Routes:**
--   GET /api/appointments: List all appointments.
--   POST /api/appointments: Schedule a new appointment.
--   GET /api/appointments/{id}: Get details of a specific appointment.
--   PUT /api/appointments/{id}: Update an appointment.
--   DELETE /api/appointments/{id}: Cancel an appointment.
-    **Insurance Routes:**
--   GET /api/insurances: List all insurances.
--   POST /api/insurances: Add new insurance.
--   GET /api/insurances/{id}: Get details of a specific insurance.
--   PUT /api/insurances/{id}: Update an insurance policy.
--   DELETE /api/insurances/{id}: Delete an insurance policy.
-    **Consultation Routes:**
--   GET /api/consultations: List all consultations.
--   POST /api/consultations: Add a new consultation.
--   GET /api/consultations/{id}: Get details of a specific consultation.
--   PUT /api/consultations/{id}: Update a consultation.
--   DELETE /api/consultations/{id}: Delete a consultation.
-    **Medical Routes:**
--   GET /api/medical-tests: List all medical tests.
--   POST /api/medical-tests: Add a new medical test.
--   GET /api/medical-tests/{id}: Get details of a specific medical test.
--   PUT /api/medical-tests/{id}: Update a medical test.
--   DELETE /api/medical-tests/{id}: Delete a medical test.
+    - GET /api/patients: List all patients.
+    - POST /api/patients: Add a new patient.
+    - GET /api/patients/{id}: Get details of a specific patient.
+    - PUT /api/patients/{id}: Update a patient's information.
+    - DELETE /api/patients/{id}: Delete a patient.
+
+3. **Appointment Routes:**
+
+    - GET /api/appointments: List all appointments.
+    - POST /api/appointments: Schedule a new appointment.
+    - GET /api/appointments/{id}: Get details of a specific appointment.
+    - PUT /api/appointments/{id}: Update an appointment.
+    - DELETE /api/appointments/{id}: Cancel an appointment.
+
+4. **Insurance Routes:**
+
+    - GET /api/insurances: List all insurances.
+    - POST /api/insurances: Add new insurance.
+    - GET /api/insurances/{id}: Get details of a specific insurance.
+    - PUT /api/insurances/{id}: Update an insurance policy.
+    - DELETE /api/insurances/{id}: Delete an insurance policy.
+
+5. **Consultation Routes:**
+
+    - GET /api/consultations: List all consultations.
+    - POST /api/consultations: Add a new consultation.
+    - GET /api/consultations/{id}: Get details of a specific consultation.
+    - PUT /api/consultations/{id}: Update a consultation.
+    - DELETE /api/consultations/{id}: Delete a consultation.
+
+6. **Medical Routes:**
+
+    - GET /api/medical-tests: List all medical tests.
+    - POST /api/medical-tests: Add a new medical test.
+    - GET /api/medical-tests/{id}: Get details of a specific medical test.
+    - PUT /api/medical-tests/{id}: Update a medical test.
+    - DELETE /api/medical-tests/{id}: Delete a medical test.
 
 ## Running the Application
 
@@ -152,6 +160,4 @@ Run the application's tests using PHPUnit:
 php artisan test
 ```
 
-```
 
-```
